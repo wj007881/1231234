@@ -1,0 +1,71 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models",
+      "./node_modules/loopback/loopback-comment-passport/lib/models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mydb"
+  },
+  "AccessToken": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mydb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mydb",
+    "public": false
+  },
+  "news": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "xbuser": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "stories": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "top_stories": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "wj": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "videoes": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "video": {
+    "dataSource": "mydb",
+    "public": true
+  },
+  "save": {
+    "dataSource": "mydb",
+    "public": true
+  }
+}

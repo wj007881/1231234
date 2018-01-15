@@ -1,0 +1,39 @@
+{
+  "name": "top_stories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "images": {
+      "type": [
+        "string"
+      ]
+    },
+    "oid": {
+      "type": [
+        "number"
+      ]
+    },
+    "title": {
+      "type": [
+        "string"
+      ]
+    },
+    "littletitle": {
+      "type": [
+        "string"
+      ]
+    },
+    "pingl": {
+      "type": [
+        "object"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "xbuser",
+  "plural": "xbuser",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "save": {
+      "type": "hasMany",
+      "model": "save",
+      "foreignKey": "saveId"
+    }
+  },
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "status"
+    }
+  ],
+  "methods": {}
+}

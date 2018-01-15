@@ -1,0 +1,27 @@
+{
+  "name": "wj",
+  "plural": "examples",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "signin": {
+      "type": "string",
+      "required": true
+    },
+    "rezis": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

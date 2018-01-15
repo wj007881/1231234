@@ -1,0 +1,31 @@
+{
+  "name": "stories",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "auth": {
+      "type": [
+        "string"
+      ]
+    },
+    "pl": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "principalType": "ROLE",
+      "permission": "ALLOW",
+      "property": "sayHi",
+      "pricipalId": "$everyone"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mymongo",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mymongo",
+    "public": false
+  },
+  "loginuser": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "hello": {
+    "dataSource": "mymongo",
+    "public": true
+  },
+  "hello2": {
+    "dataSource": "mymongo",
+    "public": true
+  }
+}

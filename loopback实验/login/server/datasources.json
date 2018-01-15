@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mymongo": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "url": "",
+    "database": "xblogin",
+    "password": "",
+    "name": "mymongo",
+    "user": "",
+    "connector": "mongodb"
+  }
+}
